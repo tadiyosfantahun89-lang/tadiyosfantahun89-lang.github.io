@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adit Visuals | Creative Portfolio</title>
+
+    <meta name="description" content="Adit Visuals - Professional photo editing, video editing and graphic design services.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0b0b;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(11, 11, 11, 0.92);
+            z-index: 1000;
+            border-bottom: 1px solid #222;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #d4af37;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 7% 80px;
+            background:
+                radial-gradient(circle at 80% 40%, #25200d 0%, #0b0b0b 40%);
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero small {
+            color: #d4af37;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: clamp(50px, 8vw, 100px);
+            line-height: 0.95;
+            margin: 20px 0;
+        }
+
+        .hero h1 span {
+            color: #d4af37;
+        }
+
+        .hero p {
+            max-width: 600px;
+            color: #bdbdbd;
+            font-size: 18px;
+            margin-bottom: 35px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #d4af37;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: white;
+        }
+
+        .button-outline {
+            background: transparent;
+            color: white;
+            border: 1px solid #555;
+        }
+
+        .button-outline:hover {
+            background: white;
+            color: black;
+        }
+
+        section {
+            padding: 100px 7%;
+        }
+
+        .section-title {
+            margin-bottom: 50px;
+        }
+
+        .section-title small {
+            color: #d4af37;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .section-title h2 {
+            font-size: 45px;
+            margin-top: 10px;
+        }
+
+        .about {
+            background: #111111;
+        }
+
+        .about-content {
+            max-width: 850px;
+        }
+
+        .about p {
+            color: #c4c4c4;
+            font-size: 18px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .service {
+            padding: 35px;
+            background: #151515;
+            border: 1px solid #252525;
+            transition: 0.3s;
+        }
+
+        .service:hover {
+            transform: translateY(-5px);
+            border-color: #d4af37;
+        }
+
+        .service h3 {
+            margin-bottom: 15px;
+            font-size: 23px;
+        }
+
+        .service p {
+            color: #999;
+        }
+
+        .portfolio {
+            background: #0b0b0b;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .portfolio-item {
+            height: 280px;
+            background: #181818;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            border: 1px solid #222;
+        }
+
+        .contact {
+            background: #111111;
+            text-align: center;
+        }
+
+        .contact p {
+            color: #aaa;
+            max-width: 600px;
+            margin: 15px auto 30px;
+        }
+
+        footer {
+            padding: 30px 7%;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            background: #080808;
+        }
+
+        @media (max-width: 800px) {
+            nav ul {
+                gap: 12px;
+            }
+
+            .services,
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 55px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">ADIT <span>VISUALS</span></div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+
+            <small>Creative Visual Studio</small>
+
+            <h1>
+                ADIT<br>
+                <span>VISUALS</span>
+            </h1>
+
+            <p>
+                Professional photo editing, video editing and graphic design
+                crafted to make your ideas look their best.
+            </p>
+
+            <a href="#portfolio" class="button">View My Work</a>
+            <a href="#contact" class="button button-outline">Let's Work Together</a>
+
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+
+        <div class="section-title">
+            <small>About Me</small>
+            <h2>Visuals with purpose.</h2>
+        </div>
+
+        <div class="about-content">
+
+            <p>
+                Adit Visuals is a creative portfolio focused on professional
+                photo editing, video editing and graphic design. My goal is
+                simple: create clean, engaging and professional visuals that
+                help people and businesses present their ideas better.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section id="services">
+
+        <div class="section-title">
+            <small>What I Do</small>
+            <h2>Services</h2>
+        </div>
+
+        <div class="services">
+
+            <div class="service">
+                <h3>Photo Editing</h3>
+                <p>
+                    Professional color correction, retouching, background
+                    cleanup and image enhancement.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Video Editing</h3>
+                <p>
+                    Clean and engaging edits for social media, YouTube,
+                    advertisements and other content.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Graphic Design</h3>
+                <p>
+                    Creative designs for brands, social media, advertising
+                    and digital content.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="portfolio" id="portfolio">
+
+        <div class="section-title">
+            <small>Selected Work</small>
+            <h2>Portfolio</h2>
+        </div>
+
+        <div class="portfolio-grid">
+
+            <div class="portfolio-item">
+                Your Project 01
+            </div>
+
+            <div class="portfolio-item">
+                Your Project 02
+            </div>
+
+            <div class="portfolio-item">
+                Your Project 03
+            </div>
+
+            <div class="portfolio-item">
+                Your Project 04
+            </div>
+
+            <div class="portfolio-item">
+                Your Project 05
+            </div>
+
+            <div class="portfolio-item">
+                Your Project 06
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="contact" id="contact">
+
+        <div class="section-title">
+            <small>Get In Touch</small>
+            <h2>Let's create something great.</h2>
+        </div>
+
+        <p>
+            Have a project in mind? Contact me and let's discuss how I can
+            help bring your idea to life.
+        </p>
+
+        <a href="mailto:your@email.com" class="button">
+            Contact Me
+        </a>
+
+    </section>
+
+
+    <footer>
+        © 2026 Adit Visuals. All rights reserved.
+    </footer>
+
+</body>
+</html>
