@@ -33,7 +33,7 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             background: #080808;
             color: #ffffff;
             line-height: 1.6;
@@ -86,32 +86,35 @@
             color: #999;
         }
 
-        .button {
-            display: inline-block;
-            padding: 14px 28px;
-            background: #d4af37;
-            color: #000;
-            font-weight: bold;
-            border-radius: 2px;
-            transition: 0.3s;
-            border: 1px solid #d4af37;
-        }
+       .button {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #d4af37;
+    color: #080808;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    border: 1px solid #d4af37;
+}
 
         .button:hover {
             background: #fff;
             border-color: #fff;
         }
 
-        .button-outline {
-            background: transparent;
-            color: #fff;
-            border-color: #555;
-        }
+       .button-outline {
+    background: transparent;
+    color: #fff;
+    border-color: #444;
+}
 
-        .button-outline:hover {
-            background: #fff;
-            color: #000;
-        }
+.button-outline:hover {
+    background: #fff;
+    color: #080808;
+    border-color: #fff;
+}
 
 
         /* =========================================
@@ -136,15 +139,17 @@
         }
 
         .logo {
-            font-size: 23px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            color: #fff;
-        }
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
 
-        .logo span {
-            color: #d4af37;
-        }
+.logo span {
+    color: #d4af37;
+    font-weight: 400;
+}
 
         .nav-links {
             display: flex;
@@ -173,36 +178,67 @@
             align-items: center;
             background:
                 radial-gradient(circle at 75% 45%, #30270c 0%, #080808 38%);
-            padding-top: 80px;
+            padding-top: 100px;
         }
 
         .hero-content {
             max-width: 850px;
         }
 
-        .hero-label {
-            color: #d4af37;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            font-size: 13px;
-        }
+       .hero-label {
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
 
-        .hero h1 {
-            font-size: clamp(55px, 9vw, 110px);
-            line-height: 0.95;
-            margin: 20px 0;
-        }
+       .hero h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(55px, 9vw, 110px);
+    font-weight: 500;
+    letter-spacing: -3px;
+    line-height: 0.9;
+    margin: 20px 0;
+}
 
-        .hero h1 span {
-            color: #d4af37;
-        }
+.hero h1 span {
+    color: #d4af37;
+    font-weight: 400;
+}
+.hero-title {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
 
+.hero-logo-placeholder {
+    width: 125px;
+    height: 125px;
+    border: 1px solid #d4af37;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #666;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: rgba(212, 175, 55, 0.03);
+}
+
+.hero-logo-placeholder span {
+    color: #777;
+}
         .hero p {
-            max-width: 650px;
-            color: #aaa;
-            font-size: 18px;
-            margin-bottom: 35px;
-        }
+    max-width: 760px;
+    color: #a7a7a7;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 38px;
+}
 
         .hero-buttons {
             display: flex;
@@ -258,31 +294,41 @@
         }
 
         .service-card {
-            background: #121212;
-            padding: 35px;
-            border: 1px solid #252525;
-            transition: 0.3s;
-        }
+    position: relative;
+    background: linear-gradient(145deg, #151515, #101010);
+    padding: 38px 32px;
+    border: 1px solid #252525;
+    min-height: 230px;
+    transition: all 0.35s ease;
+    overflow: hidden;
+}
 
         .service-card:hover {
-            transform: translateY(-7px);
-            border-color: #d4af37;
-        }
+    transform: translateY(-8px);
+    border-color: rgba(212, 175, 55, 0.7);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
 
         .service-number {
-            color: #d4af37;
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
+    color: #d4af37;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+}
 
         .service-card h3 {
-            font-size: 23px;
-            margin-bottom: 15px;
-        }
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    margin-bottom: 14px;
+}
 
         .service-card p {
-            color: #999;
-        }
+    color: #999;
+    font-size: 15px;
+    line-height: 1.75;
+}
 
 
         /* =========================================
@@ -300,23 +346,36 @@
         }
 
         .portfolio-item {
-            min-height: 280px;
-            background: #1a1a1a;
-            border: 1px solid #282828;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
-            color: #666;
-            transition: 0.3s;
-        }
+    position: relative;
+    min-height: 320px;
+    background: #151515;
+    border: 1px solid #282828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    overflow: hidden;
+    transition: all 0.35s ease;
+}
 
         .portfolio-item:hover {
-            border-color: #d4af37;
-            transform: scale(1.02);
-        }
+    border-color: rgba(212, 175, 55, 0.7);
+    transform: translateY(-5px);
+}
+        .portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    transition: transform 0.5s ease;
+}
 
+.portfolio-item:hover img {
+    transform: scale(1.04);
+}
         /*
         TO ADD A REAL PORTFOLIO IMAGE:
 
@@ -700,7 +759,19 @@
         }
 
         @media (max-width: 600px) {
+.hero-title {
+    gap: 20px;
+}
 
+.hero-logo-placeholder {
+    width: 85px;
+    height: 85px;
+    font-size: 9px;
+}
+
+.hero h1 {
+    font-size: 55px;
+}
             .section {
                 padding: 70px 0;
             }
@@ -745,8 +816,8 @@
 
         <!-- EDIT WEBSITE NAME HERE -->
         <a href="#home" class="logo">
-            ADIT <span>VISUALS</span>
-        </a>
+    Adit <span>Visuals</span>
+</a>
 
         <ul class="nav-links">
 
@@ -783,18 +854,28 @@
                 Creative Visual Studio
             </div>
 
-            <h1>
-                ADIT<br>
-                <span>VISUALS</span>
-            </h1>
+           <div class="hero-title">
+
+    <h1>
+        Adit<br>
+        <span>Visuals</span>
+    </h1>
+
+    <div class="hero-logo-placeholder">
+        <span>LOGO</span>
+    </div>
+
+</div>
 
             <!-- EDIT THIS DESCRIPTION ANYTIME -->
 
-            <p>
-                Professional visual solutions for brands, businesses,
-                creators and individuals. From photo and video editing
-                to graphic design, cinematography and digital marketing.
-            </p>
+           <p>
+    Professional creative services for brands, businesses,
+    creators and individuals.
+    <br><br>
+    Photo Editing • Video Editing • Graphic Design • Cinematography •
+    Digital Marketing • Videography & Photography • Social Media Management
+</p>
 
             <div class="hero-buttons">
 
@@ -828,11 +909,11 @@
 
             <span>About Adit Visuals</span>
 
-            <h2>Creative work with purpose.</h2>
+<h2>Creative visuals. Professional results.</h2>
 
-            <p>
-                Helping ideas become strong visual experiences.
-            </p>
+<p>
+    Turning ideas, moments and brands into compelling visual experiences.
+</p>
 
         </div>
 
@@ -863,11 +944,17 @@
                 <!-- EDIT THIS TEXT ANYTIME -->
 
                 <p>
-                    Adit Visuals is a creative visual studio providing
-                    professional services in photo editing, video editing,
-                    graphic design, social media, cinematography and
-                    digital marketing.
-                </p>
+    Adit Visuals is a creative visual studio focused on producing
+    professional visual content for brands, businesses, creators
+    and individuals.
+</p>
+
+<p>
+    From photo and video editing to graphic design, cinematography,
+    photography, videography, digital marketing and social media
+    management, we create visual work that is clean, engaging
+    and built to communicate.
+</p>
 
                 <p>
                     The goal is simple: create clean, engaging and
@@ -875,8 +962,8 @@
                     creators and businesses communicate better.
                 </p>
 
-                <a href="#contact" class="button">
-                    Let's Work Together
+                <a href="#portfolio" class="button">
+                    Explore My Work
                 </a>
 
             </div>
@@ -901,12 +988,12 @@
 
             <span>What I Do</span>
 
-            <h2>Services</h2>
+<h2>Creative Services</h2>
 
-            <p>
-                Professional creative services for brands,
-                businesses, creators and individuals.
-            </p>
+<p>
+    A complete range of visual and digital services
+    for brands, businesses, creators and individuals.
+</p>
 
         </div>
 
@@ -963,12 +1050,11 @@
 
                 <div class="service-number">04</div>
 
-                <h3>Social Media Management & Content Creation</h3>
+                <h3>Social Media Management</h3>
 
                 <p>
-                    Content planning, creative production,
-                    social media management and engaging
-                    visual content for digital platforms.
+                   Strategic content planning, social media management
+                   and engaging visual content designed for digital platforms.
                 </p>
 
             </div>
@@ -978,12 +1064,11 @@
 
                 <div class="service-number">05</div>
 
-                <h3>Cinematography & Videography</h3>
+                <h3>Videography & Photography</h3>
 
                 <p>
-                    Professional visual storytelling,
-                    photography and videography for events,
-                    brands, campaigns and creative projects.
+                    Professional photography and videography for events,
+                    brands, campaigns, portraits and creative projects.
                 </p>
 
             </div>
@@ -996,11 +1081,23 @@
                 <h3>Digital Marketing</h3>
 
                 <p>
-                    Creative digital marketing solutions,
-                    promotional content and strategies designed
-                    to help businesses reach their audience.
+                    Creative digital marketing solutions, promotional content
+                    and visual strategies designed to help businesses reach
+                    and engage their audience.
                 </p>
+                <div class="service-card">
 
+                <div class="service-number">07</div>
+
+                <h3>Cinematography</h3>
+
+                <p>
+                    Cinematic visual storytelling for brands, campaigns,
+                    events and creative productions with a strong focus
+                    on composition, movement and visual atmosphere.
+               </p>
+
+                 </div>
             </div>
 
         </div>
@@ -1026,7 +1123,8 @@
             <h2>Portfolio</h2>
 
             <p>
-                A selection of creative work and projects.
+                A selection of photo, video, design and visual projects
+                created for brands, businesses and creative clients.
             </p>
 
         </div>
