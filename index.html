@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Adit Visuals | Creative Portfolio</title>
+    <!-- ================================
+         WEBSITE INFORMATION
+         EDIT THESE ANYTIME
+    ================================= -->
 
-    <meta name="description" content="Adit Visuals - Professional photo editing, video editing and graphic design services.">
+    <title>Adit Visuals | Creative Visual Studio</title>
+
+    <meta name="description"
+          content="Adit Visuals provides professional video editing, graphic design, photo editing, social media management, cinematography, videography and digital marketing services.">
+
+    <meta name="author" content="Adit Visuals">
 
     <style>
+
+        /* =========================================
+           GENERAL SETTINGS
+        ========================================= */
+
         * {
             margin: 0;
             padding: 0;
@@ -21,71 +34,161 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #0b0b0b;
+            background: #080808;
             color: #ffffff;
             line-height: 1.6;
         }
 
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .gold {
+            color: #d4af37;
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .section-title span {
+            color: #d4af37;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: bold;
+        }
+
+        .section-title h2 {
+            font-size: 45px;
+            margin-top: 10px;
+        }
+
+        .section-title p {
+            max-width: 650px;
+            margin: 15px auto 0;
+            color: #999;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #d4af37;
+            color: #000;
+            font-weight: bold;
+            border-radius: 2px;
+            transition: 0.3s;
+            border: 1px solid #d4af37;
+        }
+
+        .button:hover {
+            background: #fff;
+            border-color: #fff;
+        }
+
+        .button-outline {
+            background: transparent;
+            color: #fff;
+            border-color: #555;
+        }
+
+        .button-outline:hover {
+            background: #fff;
+            color: #000;
+        }
+
+
+        /* =========================================
+           NAVIGATION
+        ========================================= */
+
         nav {
             position: fixed;
-            top: 0;
             width: 100%;
-            padding: 20px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(11, 11, 11, 0.92);
+            top: 0;
+            left: 0;
             z-index: 1000;
+            background: rgba(8, 8, 8, 0.95);
             border-bottom: 1px solid #222;
         }
 
+        .nav-container {
+            min-height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
         .logo {
-            font-size: 24px;
+            font-size: 23px;
             font-weight: bold;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            color: #fff;
         }
 
         .logo span {
             color: #d4af37;
         }
 
-        nav ul {
+        .nav-links {
             display: flex;
             list-style: none;
-            gap: 30px;
+            gap: 25px;
         }
 
-        nav a {
-            color: white;
-            text-decoration: none;
+        .nav-links a {
+            color: #ddd;
             font-size: 14px;
+            transition: 0.3s;
         }
 
-        nav a:hover {
+        .nav-links a:hover {
             color: #d4af37;
         }
+
+
+        /* =========================================
+           HERO
+        ========================================= */
 
         .hero {
             min-height: 100vh;
             display: flex;
             align-items: center;
-            padding: 120px 7% 80px;
             background:
-                radial-gradient(circle at 80% 40%, #25200d 0%, #0b0b0b 40%);
+                radial-gradient(circle at 75% 45%, #30270c 0%, #080808 38%);
+            padding-top: 80px;
         }
 
         .hero-content {
-            max-width: 800px;
+            max-width: 850px;
         }
 
-        .hero small {
+        .hero-label {
             color: #d4af37;
-            letter-spacing: 4px;
             text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 13px;
         }
 
         .hero h1 {
-            font-size: clamp(50px, 8vw, 100px);
+            font-size: clamp(55px, 9vw, 110px);
             line-height: 0.95;
             margin: 20px 0;
         }
@@ -95,309 +198,1696 @@
         }
 
         .hero p {
-            max-width: 600px;
-            color: #bdbdbd;
+            max-width: 650px;
+            color: #aaa;
             font-size: 18px;
             margin-bottom: 35px;
         }
 
-        .button {
-            display: inline-block;
-            padding: 14px 28px;
-            background: #d4af37;
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-            margin-right: 10px;
-            transition: 0.3s;
+        .hero-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
         }
 
-        .button:hover {
-            background: white;
-        }
 
-        .button-outline {
-            background: transparent;
-            color: white;
-            border: 1px solid #555;
-        }
-
-        .button-outline:hover {
-            background: white;
-            color: black;
-        }
-
-        section {
-            padding: 100px 7%;
-        }
-
-        .section-title {
-            margin-bottom: 50px;
-        }
-
-        .section-title small {
-            color: #d4af37;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-        }
-
-        .section-title h2 {
-            font-size: 45px;
-            margin-top: 10px;
-        }
+        /* =========================================
+           ABOUT
+        ========================================= */
 
         .about {
-            background: #111111;
+            background: #111;
         }
 
-        .about-content {
-            max-width: 850px;
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
         }
 
-        .about p {
-            color: #c4c4c4;
-            font-size: 18px;
+        .about-image {
+            min-height: 420px;
+            background: #181818;
+            border: 1px solid #292929;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
         }
 
-        .services {
+        .about-text h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+
+
+        /* =========================================
+           SERVICES
+        ========================================= */
+
+        .services-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
         }
 
-        .service {
+        .service-card {
+            background: #121212;
             padding: 35px;
-            background: #151515;
             border: 1px solid #252525;
             transition: 0.3s;
         }
 
-        .service:hover {
-            transform: translateY(-5px);
+        .service-card:hover {
+            transform: translateY(-7px);
             border-color: #d4af37;
         }
 
-        .service h3 {
-            margin-bottom: 15px;
-            font-size: 23px;
+        .service-number {
+            color: #d4af37;
+            font-size: 14px;
+            margin-bottom: 20px;
         }
 
-        .service p {
+        .service-card h3 {
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
             color: #999;
         }
 
+
+        /* =========================================
+           PORTFOLIO
+        ========================================= */
+
         .portfolio {
-            background: #0b0b0b;
+            background: #111;
         }
 
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
+            gap: 18px;
         }
 
         .portfolio-item {
-            height: 280px;
-            background: #181818;
+            min-height: 280px;
+            background: #1a1a1a;
+            border: 1px solid #282828;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            transition: 0.3s;
+        }
+
+        .portfolio-item:hover {
+            border-color: #d4af37;
+            transform: scale(1.02);
+        }
+
+        /*
+        TO ADD A REAL PORTFOLIO IMAGE:
+
+        Replace a portfolio box with:
+
+        <div class="portfolio-item">
+            <img src="images/project1.jpg" alt="Photo editing project">
+        </div>
+
+        */
+
+
+        /* =========================================
+           CLIENT STATISTICS
+        ========================================= */
+
+        .stats {
+            background: #080808;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat {
+            padding: 35px 20px;
+            border: 1px solid #252525;
+            background: #111;
+        }
+
+        .stat h3 {
+            color: #d4af37;
+            font-size: 42px;
+        }
+
+        .stat p {
+            color: #999;
+            margin-top: 5px;
+        }
+
+
+        /* =========================================
+           TESTIMONIALS
+        ========================================= */
+
+        .testimonials {
+            background: #111;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .testimonial {
+            background: #171717;
+            padding: 30px;
+            border: 1px solid #272727;
+        }
+
+        .testimonial p {
+            color: #bbb;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .testimonial h4 {
+            color: #d4af37;
+        }
+
+        .testimonial small {
+            color: #777;
+        }
+
+
+        /* =========================================
+           BLOG
+        ========================================= */
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .blog-card {
+            background: #121212;
+            border: 1px solid #252525;
+            overflow: hidden;
+        }
+
+        .blog-image {
+            height: 210px;
+            background: #1c1c1c;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #666;
-            border: 1px solid #222;
         }
+
+        .blog-content {
+            padding: 25px;
+        }
+
+        .blog-content small {
+            color: #d4af37;
+        }
+
+        .blog-content h3 {
+            margin: 10px 0;
+        }
+
+        .blog-content p {
+            color: #999;
+        }
+
+
+        /* =========================================
+           RESOURCES
+        ========================================= */
+
+        .resources {
+            background: #111;
+        }
+
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .resource-card {
+            background: #181818;
+            padding: 30px;
+            border: 1px solid #292929;
+        }
+
+        .resource-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .resource-card p {
+            color: #999;
+            margin-bottom: 20px;
+        }
+
+
+        /* =========================================
+           STORE
+        ========================================= */
+
+        .store-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .product {
+            background: #121212;
+            border: 1px solid #282828;
+            padding: 25px;
+        }
+
+        .product-image {
+            height: 220px;
+            background: #1b1b1b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .product h3 {
+            margin-bottom: 8px;
+        }
+
+        .product p {
+            color: #999;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            color: #d4af37;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+
+
+        /* =========================================
+           SUBSCRIPTION
+        ========================================= */
+
+        .subscription {
+            background:
+                radial-gradient(circle at center, #30270c 0%, #0b0b0b 50%);
+        }
+
+        .subscription-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .plan {
+            background: #121212;
+            border: 1px solid #292929;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .plan.premium {
+            border-color: #d4af37;
+        }
+
+        .plan h3 {
+            font-size: 28px;
+        }
+
+        .plan .plan-price {
+            font-size: 35px;
+            color: #d4af37;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .plan ul {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .plan li {
+            color: #aaa;
+            margin: 10px 0;
+        }
+
+        .plan li::before {
+            content: "✓ ";
+            color: #d4af37;
+        }
+
+
+        /* =========================================
+           CONTACT
+        ========================================= */
 
         .contact {
-            background: #111111;
-            text-align: center;
+            background: #111;
         }
 
-        .contact p {
-            color: #aaa;
-            max-width: 600px;
-            margin: 15px auto 30px;
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
         }
+
+        .contact-info h3 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            color: #aaa;
+            margin-bottom: 25px;
+        }
+
+        .contact-list {
+            list-style: none;
+        }
+
+        .contact-list li {
+            margin: 15px 0;
+            color: #bbb;
+        }
+
+        .contact-list strong {
+            color: #d4af37;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #080808;
+            border: 1px solid #333;
+            color: #fff;
+            outline: none;
+        }
+
+        .contact-form textarea {
+            min-height: 160px;
+            resize: vertical;
+        }
+
+
+        /* =========================================
+           FOOTER
+        ========================================= */
 
         footer {
-            padding: 30px 7%;
-            text-align: center;
-            color: #666;
-            font-size: 14px;
-            background: #080808;
+            background: #070707;
+            padding: 50px 0 25px;
+            border-top: 1px solid #222;
         }
 
-        @media (max-width: 800px) {
-            nav ul {
-                gap: 12px;
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        footer h3 {
+            margin-bottom: 15px;
+        }
+
+        footer p {
+            color: #777;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin: 8px 0;
+        }
+
+        footer a {
+            color: #888;
+        }
+
+        footer a:hover {
+            color: #d4af37;
+        }
+
+        .copyright {
+            border-top: 1px solid #222;
+            padding-top: 25px;
+            text-align: center;
+            color: #555;
+        }
+
+
+        /* =========================================
+           MOBILE
+        ========================================= */
+
+        @media (max-width: 900px) {
+
+            .nav-links {
+                display: none;
             }
 
-            .services,
-            .portfolio-grid {
+            .about-grid,
+            .contact-grid,
+            .subscription-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .services-grid,
+            .portfolio-grid,
+            .testimonial-grid,
+            .blog-grid,
+            .resource-grid,
+            .store-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .section {
+                padding: 70px 0;
             }
 
             .hero h1 {
                 font-size: 55px;
             }
+
+            .section-title h2 {
+                font-size: 35px;
+            }
+
+            .services-grid,
+            .portfolio-grid,
+            .testimonial-grid,
+            .blog-grid,
+            .resource-grid,
+            .store-grid,
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
         }
+
     </style>
 </head>
 
+
 <body>
 
-    <nav>
-        <div class="logo">ADIT <span>VISUALS</span></div>
 
-        <ul>
+<!-- =========================================
+     NAVIGATION
+========================================= -->
+
+<nav>
+
+    <div class="container nav-container">
+
+        <!-- EDIT WEBSITE NAME HERE -->
+        <a href="#home" class="logo">
+            ADIT <span>VISUALS</span>
+        </a>
+
+        <ul class="nav-links">
+
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#store">Store</a></li>
+            <li><a href="#subscribe">Subscribe</a></li>
             <li><a href="#contact">Contact</a></li>
+
         </ul>
-    </nav>
+
+    </div>
+
+</nav>
 
 
-    <section class="hero" id="home">
+
+<!-- =========================================
+     HOME
+========================================= -->
+
+<section class="hero" id="home">
+
+    <div class="container">
+
         <div class="hero-content">
 
-            <small>Creative Visual Studio</small>
+            <div class="hero-label">
+                Creative Visual Studio
+            </div>
 
             <h1>
                 ADIT<br>
                 <span>VISUALS</span>
             </h1>
 
-            <p>
-                Professional photo editing, video editing and graphic design
-                crafted to make your ideas look their best.
-            </p>
-
-            <a href="#portfolio" class="button">View My Work</a>
-            <a href="#contact" class="button button-outline">Let's Work Together</a>
-
-        </div>
-    </section>
-
-
-    <section class="about" id="about">
-
-        <div class="section-title">
-            <small>About Me</small>
-            <h2>Visuals with purpose.</h2>
-        </div>
-
-        <div class="about-content">
+            <!-- EDIT THIS DESCRIPTION ANYTIME -->
 
             <p>
-                Adit Visuals is a creative portfolio focused on professional
-                photo editing, video editing and graphic design. My goal is
-                simple: create clean, engaging and professional visuals that
-                help people and businesses present their ideas better.
+                Professional visual solutions for brands, businesses,
+                creators and individuals. From photo and video editing
+                to graphic design, cinematography and digital marketing.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#portfolio" class="button">
+                    View My Work
+                </a>
+
+                <a href="#contact" class="button button-outline">
+                    Work With Me
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     ABOUT
+========================================= -->
+
+<section class="section about" id="about">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>About Adit Visuals</span>
+
+            <h2>Creative work with purpose.</h2>
+
+            <p>
+                Helping ideas become strong visual experiences.
             </p>
 
         </div>
 
-    </section>
+
+        <div class="about-grid">
+
+            <!--
+            REPLACE THIS BOX WITH YOUR PHOTO.
+
+            Example:
+
+            <img src="images/about.jpg"
+                 alt="Adit Visuals">
+
+            -->
+
+            <div class="about-image">
+                Your Photo / Studio Image
+            </div>
 
 
-    <section id="services">
+            <div class="about-text">
+
+                <h3>
+                    Visuals that tell your story.
+                </h3>
+
+                <!-- EDIT THIS TEXT ANYTIME -->
+
+                <p>
+                    Adit Visuals is a creative visual studio providing
+                    professional services in photo editing, video editing,
+                    graphic design, social media, cinematography and
+                    digital marketing.
+                </p>
+
+                <p>
+                    The goal is simple: create clean, engaging and
+                    professional visual content that helps individuals,
+                    creators and businesses communicate better.
+                </p>
+
+                <a href="#contact" class="button">
+                    Let's Work Together
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     SERVICES
+========================================= -->
+
+<section class="section" id="services">
+
+    <div class="container">
 
         <div class="section-title">
-            <small>What I Do</small>
+
+            <span>What I Do</span>
+
             <h2>Services</h2>
+
+            <p>
+                Professional creative services for brands,
+                businesses, creators and individuals.
+            </p>
+
         </div>
 
-        <div class="services">
 
-            <div class="service">
-                <h3>Photo Editing</h3>
-                <p>
-                    Professional color correction, retouching, background
-                    cleanup and image enhancement.
-                </p>
-            </div>
+        <div class="services-grid">
 
-            <div class="service">
+
+            <div class="service-card">
+
+                <div class="service-number">01</div>
+
                 <h3>Video Editing</h3>
+
                 <p>
-                    Clean and engaging edits for social media, YouTube,
-                    advertisements and other content.
+                    Professional editing for YouTube videos,
+                    social media, advertisements, promotional
+                    content and other digital projects.
                 </p>
+
             </div>
 
-            <div class="service">
+
+            <div class="service-card">
+
+                <div class="service-number">02</div>
+
                 <h3>Graphic Design</h3>
+
                 <p>
-                    Creative designs for brands, social media, advertising
-                    and digital content.
+                    Creative visual designs for brands,
+                    advertisements, social media, promotional
+                    materials and digital platforms.
                 </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">03</div>
+
+                <h3>Photo Editing</h3>
+
+                <p>
+                    Professional retouching, color correction,
+                    image enhancement, background cleanup and
+                    creative photo manipulation.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">04</div>
+
+                <h3>Social Media Management & Content Creation</h3>
+
+                <p>
+                    Content planning, creative production,
+                    social media management and engaging
+                    visual content for digital platforms.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">05</div>
+
+                <h3>Cinematography & Videography</h3>
+
+                <p>
+                    Professional visual storytelling,
+                    photography and videography for events,
+                    brands, campaigns and creative projects.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">06</div>
+
+                <h3>Digital Marketing</h3>
+
+                <p>
+                    Creative digital marketing solutions,
+                    promotional content and strategies designed
+                    to help businesses reach their audience.
+                </p>
+
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <section class="portfolio" id="portfolio">
+
+<!-- =========================================
+     PORTFOLIO
+========================================= -->
+
+<section class="section portfolio" id="portfolio">
+
+    <div class="container">
 
         <div class="section-title">
-            <small>Selected Work</small>
+
+            <span>Selected Work</span>
+
             <h2>Portfolio</h2>
+
+            <p>
+                A selection of creative work and projects.
+            </p>
+
         </div>
+
 
         <div class="portfolio-grid">
 
+
+            <!--
+            TO ADD YOUR IMAGE:
+
+            Replace the text inside each box with:
+
+            <img src="images/project1.jpg"
+                 alt="Project description">
+
+            -->
+
+
             <div class="portfolio-item">
-                Your Project 01
+                Project 01<br>
+                Photo Editing
             </div>
 
             <div class="portfolio-item">
-                Your Project 02
+                Project 02<br>
+                Video Editing
             </div>
 
             <div class="portfolio-item">
-                Your Project 03
+                Project 03<br>
+                Graphic Design
             </div>
 
             <div class="portfolio-item">
-                Your Project 04
+                Project 04<br>
+                Social Media
             </div>
 
             <div class="portfolio-item">
-                Your Project 05
+                Project 05<br>
+                Photography
             </div>
 
             <div class="portfolio-item">
-                Your Project 06
+                Project 06<br>
+                Digital Marketing
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <section class="contact" id="contact">
+
+<!-- =========================================
+     CLIENTS
+========================================= -->
+
+<section class="section stats" id="clients">
+
+    <div class="container">
 
         <div class="section-title">
-            <small>Get In Touch</small>
-            <h2>Let's create something great.</h2>
+
+            <span>Our Growth</span>
+
+            <h2>Clients & Experience</h2>
+
+            <p>
+                Building creative relationships through quality work.
+            </p>
+
         </div>
 
-        <p>
-            Have a project in mind? Contact me and let's discuss how I can
-            help bring your idea to life.
-        </p>
 
-        <a href="mailto:your@email.com" class="button">
-            Contact Me
-        </a>
-
-    </section>
+        <div class="stats-grid">
 
 
-    <footer>
-        © 2026 Adit Visuals. All rights reserved.
-    </footer>
+            <!-- EDIT THESE NUMBERS ANYTIME -->
+
+            <div class="stat">
+
+                <h3>20+</h3>
+
+                <p>Clients</p>
+
+            </div>
+
+
+            <div class="stat">
+
+                <h3>50+</h3>
+
+                <p>Projects</p>
+
+            </div>
+
+
+            <div class="stat">
+
+                <h3>6</h3>
+
+                <p>Creative Services</p>
+
+            </div>
+
+
+            <div class="stat">
+
+                <h3>100%</h3>
+
+                <p>Creative Focus</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     TESTIMONIALS
+========================================= -->
+
+<section class="section testimonials">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Client Feedback</span>
+
+            <h2>What Clients Say</h2>
+
+            <p>
+                Replace these examples with real client feedback.
+            </p>
+
+        </div>
+
+
+        <div class="testimonial-grid">
+
+
+            <!-- EDIT TESTIMONIAL ANYTIME -->
+
+            <div class="testimonial">
+
+                <p>
+                    "Add your first client testimonial here."
+                </p>
+
+                <h4>Client Name</h4>
+
+                <small>Client / Business</small>
+
+            </div>
+
+
+            <div class="testimonial">
+
+                <p>
+                    "Add your second client testimonial here."
+                </p>
+
+                <h4>Client Name</h4>
+
+                <small>Client / Business</small>
+
+            </div>
+
+
+            <div class="testimonial">
+
+                <p>
+                    "Add your third client testimonial here."
+                </p>
+
+                <h4>Client Name</h4>
+
+                <small>Client / Business</small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     BLOG
+========================================= -->
+
+<section class="section" id="blog">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>From The Blog</span>
+
+            <h2>Latest Articles</h2>
+
+            <p>
+                Creative ideas, editing tips, photography,
+                design and digital marketing.
+            </p>
+
+        </div>
+
+
+        <div class="blog-grid">
+
+
+            <!-- BLOG POST 1 -->
+
+            <article class="blog-card">
+
+                <div class="blog-image">
+                    Blog Image 01
+                </div>
+
+                <div class="blog-content">
+
+                    <small>PHOTO EDITING</small>
+
+                    <h3>
+                        How to Create Better Photos
+                    </h3>
+
+                    <p>
+                        Add your blog introduction here.
+                    </p>
+
+                    <br>
+
+                    <a href="#" class="gold">
+                        Read Article →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- BLOG POST 2 -->
+
+            <article class="blog-card">
+
+                <div class="blog-image">
+                    Blog Image 02
+                </div>
+
+                <div class="blog-content">
+
+                    <small>VIDEO EDITING</small>
+
+                    <h3>
+                        Video Editing Tips for Creators
+                    </h3>
+
+                    <p>
+                        Add your blog introduction here.
+                    </p>
+
+                    <br>
+
+                    <a href="#" class="gold">
+                        Read Article →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- BLOG POST 3 -->
+
+            <article class="blog-card">
+
+                <div class="blog-image">
+                    Blog Image 03
+                </div>
+
+                <div class="blog-content">
+
+                    <small>DIGITAL MARKETING</small>
+
+                    <h3>
+                        Building Better Digital Content
+                    </h3>
+
+                    <p>
+                        Add your blog introduction here.
+                    </p>
+
+                    <br>
+
+                    <a href="#" class="gold">
+                        Read Article →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     RESOURCES
+========================================= -->
+
+<section class="section resources" id="resources">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Free & Premium Materials</span>
+
+            <h2>Resources</h2>
+
+            <p>
+                Useful materials for creators, designers,
+                photographers and businesses.
+            </p>
+
+        </div>
+
+
+        <div class="resource-grid">
+
+
+            <div class="resource-card">
+
+                <h3>Free Resources</h3>
+
+                <p>
+                    Guides, tips, templates and other useful
+                    creative materials.
+                </p>
+
+                <a href="#" class="button">
+                    Explore Free Resources
+                </a>
+
+            </div>
+
+
+            <div class="resource-card">
+
+                <h3>Premium Resources</h3>
+
+                <p>
+                    Exclusive presets, templates, LUTs,
+                    guides and professional resources.
+                </p>
+
+                <a href="#store" class="button">
+                    View Premium
+                </a>
+
+            </div>
+
+
+            <div class="resource-card">
+
+                <h3>Creator Tools</h3>
+
+                <p>
+                    Useful tools and resources for creators
+                    and digital professionals.
+                </p>
+
+                <a href="#" class="button">
+                    Explore Tools
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     STORE
+========================================= -->
+
+<section class="section" id="store">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Adit Visuals Store</span>
+
+            <h2>Digital Products</h2>
+
+            <p>
+                Premium creative products and resources.
+            </p>
+
+        </div>
+
+
+        <div class="store-grid">
+
+
+            <div class="product">
+
+                <div class="product-image">
+                    Product Image
+                </div>
+
+                <h3>
+                    Lightroom Presets
+                </h3>
+
+                <p>
+                    Professional presets for photographers
+                    and creators.
+                </p>
+
+                <div class="price">
+                    $0.00
+                </div>
+
+                <a href="#" class="button">
+                    View Product
+                </a>
+
+            </div>
+
+
+            <div class="product">
+
+                <div class="product-image">
+                    Product Image
+                </div>
+
+                <h3>
+                    Video Editing Pack
+                </h3>
+
+                <p>
+                    Creative assets for video editors.
+                </p>
+
+                <div class="price">
+                    $0.00
+                </div>
+
+                <a href="#" class="button">
+                    View Product
+                </a>
+
+            </div>
+
+
+            <div class="product">
+
+                <div class="product-image">
+                    Product Image
+                </div>
+
+                <h3>
+                    Graphic Templates
+                </h3>
+
+                <p>
+                    Professional templates for social media
+                    and digital marketing.
+                </p>
+
+                <div class="price">
+                    $0.00
+                </div>
+
+                <a href="#" class="button">
+                    View Product
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     SUBSCRIPTION
+========================================= -->
+
+<section class="section subscription" id="subscribe">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Stay Connected</span>
+
+            <h2>Choose Your Membership</h2>
+
+            <p>
+                Get creative updates, resources, articles
+                and exclusive content from Adit Visuals.
+            </p>
+
+        </div>
+
+
+        <div class="subscription-grid">
+
+
+            <!-- FREE PLAN -->
+
+            <div class="plan">
+
+                <h3>Free</h3>
+
+                <div class="plan-price">
+                    $0
+                </div>
+
+                <ul>
+
+                    <li>Creative updates</li>
+
+                    <li>New blog notifications</li>
+
+                    <li>Free resources</li>
+
+                    <li>Creative tips</li>
+
+                    <li>Special announcements</li>
+
+                </ul>
+
+                <!--
+                LATER CONNECT THIS BUTTON
+                TO YOUR FREE EMAIL SUBSCRIPTION SERVICE
+                -->
+
+                <a href="#" class="button">
+                    Subscribe Free
+                </a>
+
+            </div>
+
+
+            <!-- PREMIUM PLAN -->
+
+            <div class="plan premium">
+
+                <h3>Premium</h3>
+
+                <div class="plan-price">
+                    $5 / month
+                </div>
+
+                <ul>
+
+                    <li>Premium resources</li>
+
+                    <li>Exclusive tutorials</li>
+
+                    <li>Premium presets</li>
+
+                    <li>Templates and creative assets</li>
+
+                    <li>Members-only content</li>
+
+                </ul>
+
+                <!--
+                LATER CONNECT THIS BUTTON
+                TO YOUR PAYMENT/SUBSCRIPTION SERVICE
+                -->
+
+                <a href="#" class="button">
+                    Join Premium
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CONTACT
+========================================= -->
+
+<section class="section contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Get In Touch</span>
+
+            <h2>Let's Work Together</h2>
+
+            <p>
+                Have a project in mind? Contact Adit Visuals.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+            <!-- =================================
+                 EDIT YOUR CONTACT INFORMATION HERE
+            ================================== -->
+
+            <div class="contact-info">
+
+                <h3>
+                    Contact Adit Visuals
+                </h3>
+
+                <p>
+                    For project inquiries, collaborations,
+                    creative services and business opportunities.
+                </p>
+
+
+                <ul class="contact-list">
+
+                    <li>
+                        <strong>Email:</strong>
+                        your@email.com
+                    </li>
+
+                    <li>
+                        <strong>Phone:</strong>
+                        +000 000 000 000
+                    </li>
+
+                    <li>
+                        <strong>WhatsApp:</strong>
+                        +000 000 000 000
+                    </li>
+
+                    <li>
+                        <strong>Location:</strong>
+                        Addis Ababa, Ethiopia
+                    </li>
+
+                    <!--
+                    ADD OR REMOVE CONTACTS AS NEEDED
+
+                    Instagram:
+                    Facebook:
+                    TikTok:
+                    YouTube:
+                    LinkedIn:
+                    Telegram:
+                    -->
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT FORM -->
+
+            <div class="contact-form">
+
+                <!--
+                IMPORTANT:
+                THIS FORM IS VISUAL ONLY FOR NOW.
+
+                LATER WE WILL CONNECT IT TO A FREE
+                FORM SERVICE SO YOU CAN RECEIVE
+                REAL CLIENT MESSAGES.
+                -->
+
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                >
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                >
+
+                <input
+                    type="text"
+                    placeholder="Subject"
+                >
+
+                <textarea
+                    placeholder="Tell me about your project..."
+                ></textarea>
+
+                <button
+                    type="button"
+                    class="button"
+                >
+                    Send Message
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <div>
+
+                <h3>
+                    ADIT <span class="gold">VISUALS</span>
+                </h3>
+
+                <p>
+                    Creative visual solutions for brands,
+                    businesses, creators and individuals.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+
+                    <li>
+                        <a href="#blog">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="#store">Store</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Connect
+                </h3>
+
+                <ul>
+
+                    <!--
+                    REPLACE # WITH YOUR REAL LINKS
+                    -->
+
+                    <li>
+                        <a href="#">
+                            Instagram
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Facebook
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            TikTok
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            YouTube
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            LinkedIn
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Adit Visuals.
+            All rights reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
 
 </body>
 </html>
